@@ -220,8 +220,8 @@ echo "$hostname" > /mnt/etc/hostname
 arch-chroot /mnt mkinitcpio -p linux
 
 ## password
-echo root:$root_password | arch-chroot /mnt /usr/bin/chpasswd
-echo -e $new_pass"\n"$new_pass | arch-chroot /mnt /usr/bin/passwd
+# echo root:$root_password | arch-chroot /mnt /usr/bin/chpasswd
+# echo -e $new_pass"\n"$new_pass | arch-chroot /mnt /usr/bin/passwd
 
 # install grub & os prober packages
 pacstrap /mnt grub os-prober
