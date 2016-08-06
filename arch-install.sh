@@ -114,7 +114,7 @@ fi
 if [ "$REPLY" = 'yes' ]; then
 	umount $dest_disk* || :
         wipefs -a $dest_disk
-        dd if=/dev/zero of=$dest_disk count=100 bs=512; partprobe $dest_disk; sync; partprobe -s; sleep 5
+        dd if=/dev/zero of=$dest_disk count=100 bs=512; partprobe $dest_disk; sync; sleep 5
 else
 	exit 0
 fi
