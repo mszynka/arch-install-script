@@ -2,7 +2,7 @@
 #
 ##################################################################
 #title		: installscript
-#description: Automated installation script for arch linux
+#description    : Automated installation script for arch linux
 #author		: teateawhy , based on archinstaller.sh by Dennis Anfossi .
 #contact	: https://bbs.archlinux.org/profile.php?id=57887
 #date		: 10-08
